@@ -1,0 +1,175 @@
+@import url("./utils.css");
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Geist", Arial, Helvetica, system-ui, sans-serif;
+}
+
+::selection {
+    background-color: #333;
+    color: #FFF;
+}
+
+a {
+    color: #0000CC;
+}
+
+a,
+button {
+    transition: all .25s ease-in-out;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+textarea,
+input:not([type="checkbox"]),
+.input-file-label {
+    display: block;
+    width: 100%;
+    padding: .5rem .75rem;
+    border: 1px solid #CCC;
+    font-size: 1.25rem;
+    font-weight: 300;
+    transition: all .25s ease-in-out;
+}
+
+textarea:focus,
+input:focus,
+.input-file-label:hover {
+    outline: none;
+    border-color: #333;
+}
+
+label {
+    cursor: pointer;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+input[type="checkbox"] {
+    margin-right: 1rem;
+}
+
+::placeholder {
+    color: #999;
+}
+
+pre {
+    background-color: #333;
+    color: #CCC;
+    padding: .5rem 1rem;
+    overflow: auto;
+    margin-bottom: 1rem;
+}
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    background-color: #EEE;
+    padding: 1.25vh 5vw;
+    margin-bottom: 2.5rem;
+}
+
+.header .select-lang {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 0.75rem;
+    gap: .5rem;
+}
+
+
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.container h1 {
+    font-weight: 700;
+    font-size: calc(1rem + 2.5vw);
+    margin-bottom: 3rem;
+}
+
+.container p {
+    margin-bottom: .5rem;
+}
+
+.container .description h2,
+.container .description p {
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.container .description h2 {
+    font-size: 2rem;
+}
+
+.container .description h2:not(:first-child) {
+    border-top: 1px solid #CCC;
+    margin-top: 2rem;
+    padding-top: 1rem;
+}
+
+
+
+.footer {
+    text-align: center;
+    border-top: 1px solid #CCC;
+    padding: 1.25rem .5rem;
+    margin-top: 5rem;
+    font-weight: 300;
+}
+
+
+
+.select-type {
+    display: flex;
+    gap: 1rem;
+}
+
+.select-type button {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    border: 1px solid #333;
+    background-color: #0000;
+}
+
+.select-type button svg {
+    height: 1.25rem;
+    width: auto;
+    margin-right: .5rem;
+}
+
+.select-type button:hover {
+    cursor: pointer;
+    box-shadow: 0 .25rem .5rem #333;
+}
+
+.select-type button.active {
+    background-color: #333;
+    color: #fff;
+}
+
+
+
+.error {
+    text-align: end;
+    font-size: .75rem;
+    color: #CC0000;
+    font-weight: 700;
+}
