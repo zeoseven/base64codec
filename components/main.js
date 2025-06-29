@@ -185,7 +185,7 @@ export const Main = ({ local }) => {
                         <div className="text-center color-9 my-1">--- OR ---</div>
                         <input type="text" placeholder="Enter a URL ..." onBlur={e => {
                             const URL = e.target.value;
-                            if (URL) {
+                            if (URL?.startsWith("http") ?? false) {
                                 setError("");
                                 setOutput("Loading .....");
                                 fetch(URL, {
@@ -209,8 +209,11 @@ export const Main = ({ local }) => {
                                         });
                                     };
                                 }).catch(e => {
+                                    setOutput("");
                                     setError(e.message);
                                 });
+                            } else {
+                                setError("URL is not valid.");
                             };
                         }} />
                         <div className="text-center color-9 my-1">--- OR ---</div>
