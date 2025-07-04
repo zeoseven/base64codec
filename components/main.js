@@ -235,7 +235,9 @@ export const Main = ({ local }) => {
                     </div>}
                 </div>
 
-                <p className="fw-bold">{local.output} - {output.length} Bits</p>
+                <p className="fw-bold">{local.output} - {output.length} {
+                    output.length == 1 ? "Byte" : "Bytes"
+                }</p>
                 {type == 1 && output.startsWith("data:") ? <>
                     <img className="my-2" src={output} style={{ maxWidth: "100%", display: "block" }} />
                     <a className="btn" href={output} download={Date.now()}>
