@@ -1,8 +1,8 @@
 {
     "type": "module",
     "scripts": {
-        "dev": "next dev --turbopack",
-        "build": "next build --turbopack"
+        "dev": "next dev",
+        "build": "next build"
     },
     "dependencies": {
         "next": "15.3.5",
