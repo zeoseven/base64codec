@@ -25,7 +25,6 @@ export default function ({ Component, pageProps }) {
             <title>Base64 Codec</title>
             <meta name="viewport" content="width=device-width, initial-scale=0.85" />
             <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-            <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         </Head>
         <Component {...pageProps} />
 
